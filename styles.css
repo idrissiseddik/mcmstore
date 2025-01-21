@@ -1,0 +1,122 @@
+/* Centrer le contenu de la modale */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center;
+}
+
+/* Centrer les champs de formulaire */
+.modal-body .form-control {
+    width: 80%; /* Réduire la largeur des champs pour les rendre plus centraux */
+}
+
+/* Ajouter un peu de marge entre les champs */
+.modal-body .mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Fixer le titre et le panier en haut de la page */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* S'assurer qu'il soit au-dessus des autres éléments */
+}
+
+/* Espacer le contenu sous la navbar */
+body {
+    padding-top: 60px; /* Ajuster selon la hauteur de la navbar */
+}
+
+/* Message de bienvenue centré */
+.welcome-message {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #28a745; /* Vert */
+    color: white;
+    padding: 10px;
+    margin-top: 60px; /* Décaler sous la navbar */
+    font-weight: bold;
+}
+
+/* Footer fixe en bas */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+/* Fenêtre de modification stylisée */
+.edit-modal {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.edit-modal input {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+/* Centrer le contenu des cartes */
+.card-body {
+    text-align: center; /* Centrer le texte */
+}
+
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Réduire la taille de l'image pour l'aligner */
+}
+/* Style pour le message de livraison */
+.delivery-message {
+    background-color: #dfe2e0; /* Vert */
+    color: rgb(20, 104, 55);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* Style pour le message de remerciement */
+.thank-you-message {
+    background-color: #28a745; /* Vert */
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Style des cartes de produits */
+.product-card {
+    border: 2px solid green; /* Bordure verte */
+    border-radius: 10px;      /* Coins arrondis */
+    padding: 15px;            /* Espacement interne */
+    margin-bottom: 20px;      /* Espacement entre les cartes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet de survol pour les cartes */
+.product-card:hover {
+    transform: scale(1.05);  /* Agrandir légèrement la carte au survol */
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3); /* Ombre verte au survol */
+}
+/* Ajouter une bordure verte autour des cartes */
+.card {
+    border: 2px solid #28a745; /* Vert */
+    border-radius: 8px; /* Arrondir légèrement les coins */
+}
+/* Ajouter un effet de survol avec une bordure verte plus foncée */
+.card:hover {
+    border-color: #218838; /* Une teinte plus foncée de vert */
+}
