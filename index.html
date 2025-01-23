@@ -69,15 +69,32 @@
             width: 100%; /* Prendre la largeur de la page */
             text-align: center;
         }
+
+input[type="number"] {
+    text-align: center;
+}
+.btn-outline-secondary {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+}
+
     </style>
 </head>
 <body>
+
+  <!-- Message important -->
+  <div class="alert alert-success alert-dismissible fade show alert-container" role="alert">
+    <strong>Information!</strong> Le Mouloudia Club de Marrakech affrontera l'équipe de Ittifaq le Dimanche prochain à 15h au stade 20 Aout à Marrakech.<br>
+Soyez nombreux pour encourager notre équipe le MCM.<br>
+merci
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
     <div class="container">
         <!-- En-tête avec logo -->
         <header>
             <img src="images/MCM-Logo.png" alt="Logo Mouloudia Club de Marrakech" class="logo">
-            <h1>Bienvenue sur la Boutique du Mouloudia Club de Marrakech</h1>
+            <h1>Bienvenue sur la boutique en ligne du Mouloudia Club de Marrakech !</h1>
             <p>Découvrez nos produits exclusifs !</p>
         </header>
 
@@ -108,6 +125,7 @@
             <a href="home.html" class="btn-shop">Accéder à la Boutique</a>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer>
