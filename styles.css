@@ -120,3 +120,11 @@ footer {
 .card:hover {
     border-color: #218838; /* Une teinte plus foncée de vert */
 }
+
+.card-body .mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
