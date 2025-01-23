@@ -11,7 +11,8 @@
 <body>
     <!-- Message de bienvenue -->
     <div class="welcome-message">
-        Bienvenue sur la boutique en ligne du Mouloudia Club de Marrakech !
+        LES PROMOTIONS DU JOUR !<BR>
+	A L'ACHAT D'UN ENSEMBLE T-SHIRT CASQUETTE ET ECHARPE BENIFICIER D'UNE REDUCTION DE -50DH
     </div>
 
     <!-- Navbar avec icône de panier -->
@@ -92,17 +93,63 @@
         </div>
     </div>
 
+<!-- Modale de notification générale -->
+<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="notificationModalLabel">Manque de vos informations !</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="notificationMessage"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modale de notification spécifique à la quantité -->
+<div class="modal fade" id="quantityNotificationModal" tabindex="-1" aria-labelledby="quantityNotificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quantityNotificationModalLabel">Quantité invalide</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="quantityNotificationMessage"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Liste des produits -->
+<div id="productList" class="row"></div>
+
+<!-- Panier -->
+<div id="panierDetails"></div>
+<button id="validerCommande" class="btn btn-primary">Valider la commande</button>
+
+
     <!-- Message de livraison -->
     <div class="delivery-message">
         Après validation, notre équipe vous contactera dans les plus brefs délais pour finaliser les détails. Si vous avez des questions ou des demandes spécifiques, n'hésitez pas à nous en faire part.<br>
 Merci d'avoir choisi MCM Boutique!<br>
-...
+
     </div>
 
-    <!-- Message de remerciement -->
-    <div class="thank-you-message">
-        Merci d'avoir choisi MCM Boutique!
-    </div>
+<br>
+
+<div class="mb-3 d-flex justify-content-center align-items-center">
+    <button class="btn btn-sm btn-outline-secondary me-2" onclick="updateQuantity(${product.id}, -1)">-</button>
+    <input type="number" id="quantity${product.id}" class="form-control text-center" value="1" min="1" style="width: 70px;">
+    <button class="btn btn-sm btn-outline-secondary ms-2" onclick="updateQuantity(${product.id}, 1)">+</button>
+</div>
+
 
     <!-- Footer -->
     <footer>
